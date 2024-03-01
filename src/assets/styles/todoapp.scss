@@ -1,4 +1,3 @@
-
 .todoapp {
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 24px;
@@ -69,7 +68,7 @@
 
     border: none;
     background: rgba(0, 0, 0, 0.01);
-    box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
+    box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 0.03);
 
     &::placeholder {
       font-style: italic;
@@ -117,11 +116,19 @@
     cursor: pointer;
     background: none;
 
+    visibility: hidden;
+    opacity: 0;
+
     -webkit-appearance: none;
     appearance: none;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    transition: opacity 0.3s;
+    transition: opacity 0.3s, visibility 0.3s;
+
+    &.visible {
+      visibility: visible;
+      opacity: 1;
+    }
 
     &:hover {
       text-decoration: underline;
