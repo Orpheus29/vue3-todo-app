@@ -38,7 +38,7 @@
 
       <footer class="todoapp__footer">
         <span class="todoapp__active-count">
-          {{ activeTodos.length }} items left
+          {{ activeTodos.length }} item{{ activeTodos.length !== 1 ? 's' : '' }} left
         </span>
 
         <StatusFilter v-model="status" />
