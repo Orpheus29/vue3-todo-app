@@ -1,4 +1,4 @@
-<h1 align="center">📝🔰Vue3 Todo App🔰🎯</h1>
+<h1 align="center">📝🔰Vue 3 Todo App🔰🎯</h1>
 
 <p align="center">
     <sup>Basic task manager for everyday use.</sup>
